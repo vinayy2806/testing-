@@ -27,3 +27,6 @@ resource "aws_instance" "admin" {
     sudo alias kubectl='microk8s.kubectl'
     EFO
 }
+output "PublicIP" {
+    value =  aws_instance.admin.public_ip
+}
