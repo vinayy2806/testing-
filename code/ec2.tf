@@ -7,7 +7,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "admin" {
-    Ami = "ami-04b4f1a9cf54c11d0"
+    ami = "ami-04b4f1a9cf54c11d0"
     instance_type = "t2.medium"
     security_groups = [ "default" ]
     key_name = "test"
